@@ -6,4 +6,4 @@ ADD https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.1
 
 WORKDIR /project
 
-ENTRYPOINT ["java", "-Xms512M", "-Xmx1536M", "-Xss1M", "-XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M", "-Dsbt.global.base=/sbt/0.13", "-Dsbt.ivy.home=/ivy2", "-Dsbt.boot.directory=/sbt/boot", "-jar", "/opt/sbt-launch.jar"]
+ENTRYPOINT ["java", "-Xms512M", "-Xmx1536M", "-Xss1M", "-XX:+CMSClassUnloadingEnabled", "-XX:MaxPermSize=256M", "-Dsbt.global.base=/sbt/0.13", "-Dsbt.ivy.home=/ivy2", "-Dsbt.boot.directory=/sbt/boot", "-jar", "/opt/sbt-launch.jar"]
